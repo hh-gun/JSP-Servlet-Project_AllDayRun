@@ -1,4 +1,5 @@
-# AllDayRun – JSP/Servlet Project
+# AllDayRun
+##JSP/Servlet Project
 
 ## 프로젝트 소개
 러닝 데이터를 기반으로 사용자 경험을 극대화한 웹 서비스로, 운동 애호가들의 러닝 기록 관리와 커뮤니티 참여를 돕기 위해 설계되었으며, 
@@ -12,8 +13,8 @@ Java · Oracle · JSP · Tomcat · HTML5 · CSS3 · JavaScript · MyBatis
 2. Tomcat 9.0 실행  
 3. http://localhost:8080/AllDayRun/index.do 접속  
 
-## 메인페이지
+### 메인페이지
 http://localhost:8080/AllDayRun/index.do
 
-##Google Drive
+### Google Drive
 https://drive.google.com/drive/folders/1OQ2zFuAOQti4JErNURItx0WEp6Oih1a7?usp=sharing
