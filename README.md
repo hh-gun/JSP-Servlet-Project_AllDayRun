@@ -14,3 +14,6 @@ Java · Oracle · JSP · Tomcat · HTML5 · CSS3 · JavaScript · MyBatis
 
 ## 메인페이지
 http://localhost:8080/AllDayRun/index.do
+
+##Google Drive
+https://drive.google.com/drive/folders/1OQ2zFuAOQti4JErNURItx0WEp6Oih1a7?usp=sharing
