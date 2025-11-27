@@ -1,0 +1,141 @@
+/* /* ===========================
+   지도 박스 스타일 
+   - 지도 크기, 모서리, 그림자, 여백 정리
+===========================
+#map {
+  width: 100%;
+  height: 420px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin-bottom: 20px;
+  background: #eee; 로딩 전 회색 배경
+}
+
+===========================
+   컨트롤 버튼 영역
+   - 운동 시작 / 정지 버튼 중앙 배치
+===========================
+.running-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+버튼 공통 스타일
+.running-controls button {
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+버튼 색상 구분
+#startBtn { background: #ff5f00; color: #fff; }
+#stopBtn  { background: #333;    color: #fff; }
+
+.running-controls button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+===========================
+   실시간 통계 박스
+   - 시간 / 거리 / 칼로리 표시용
+   - 고도(altitude)는 제거됨
+===========================
+.running-stats {
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px 18px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  width: 300px;
+  margin: 0 auto 20px auto;
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+}
+
+각 줄 간격
+.running-stats p {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+숫자 강조
+.running-stats span {
+  font-weight: 600;
+  color: #ff5f00;
+}
+
+===========================
+   GPX 업로드 영역 (옵션)
+===========================
+.gpx-upload {
+  text-align: center;
+  margin-top: 8px;
+  color: #555;
+  font-size: 14px;
+} */
+
+.main-content {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+
+.map {
+  width: 100%;
+  height: 400px;
+  background: #f3f3f3;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+}
+
+.run-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.timer {
+  font-size: 36px;
+  font-weight: bold;
+  color: #222;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #2d7cf6;
+}
+
+.btn.danger {
+  background: #ef4444;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}

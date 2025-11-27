@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/* 기본 레이아웃 스타일 */
+#courseDetail-main {
+	margin-top:30px;
+}
+.detail-section {
+	margin-bottom: 30px;
+}
+
+.section-title {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #f0f0f0;
+	padding-bottom: 10px;
+}
+
+.spot-details {
+	width: 250px;
+}
+
+#coursedetail-hr {
+	border: 1px solid #eee;
+	margin: 30px 0;
+}
+
+/* 지도 영역 */
+#map-container {
+	width: 100%;
+	height: 450px;
+	background-color: #f8f9fa;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	margin-bottom: 20px;
+	/* 실제 지도가 로드되기 전까지 표시될 텍스트 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #aaa;
+	font-size: 18px;
+}
+
+/* 코스 정보 영역 */
+#course-info-container {
+	padding: 20px;
+	margin-top: 80.5px;
+	margin-right: 30px;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	background-color: #fff;
+}
+
+#course-title {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#spot-list-container {
+	margin-top: 20px; 
+	border-top: 1px solid #eee; 
+	padding-top: 20px;
+}
+
+.info-item {
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+.info-item .label {
+	font-weight: bold;
+	width: 80px;
+	color: #555;
+}
+
+.info-item .value {
+	color: #333;
+}
+
+/* 버튼 영역 */
+#action-buttons {
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.action-btn {
+	padding: 10px 20px;
+	border-radius: 5px;
+	border: none;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: opacity 0.2s;
+}
+
+.action-btn:hover {
+	opacity: 0.8;
+}
+
+#btn-favorite {
+	background-color: #ffc107;
+	color: #fff;
+}
+
+#btn-delete {
+	background-color: #2c3e50;
+	color: #fff;
+}
+
+.custom-name-input {
+	font-size: 13px;
+}
+
+/* ================================== */
+/* 상세 페이지 2단 레이아웃 스타일     */
+/* ================================== */
+
+/* ================================== */
+/* 상세 페이지 Grid 레이아웃 스타일     */
+/* ================================== */
+
+/* ✅ [핵심] main-content 자체를 Grid 컨테이너로 만듭니다. */
+.main-content {
+    display: grid;
+    /* 65% 너비의 열(지도)과 35% 너비의 열(정보)을 만듭니다. */
+    grid-template-columns: 65% 35%; 
+    gap: 30px; /* 열 사이의 간격 */
+    align-items: start; /* 높이가 다른 열의 상단을 맞춤 */
+}
+
+/* 지도, 코스 정보, 후기 등 각 섹션이 Grid의 어느 영역에 위치할지 지정 */
+#map-section {
+    grid-column: 1 / 2; /* 첫 번째 열을 차지 */
+}
+
+#info-section {
+    grid-column: 2 / 3; /* 두 번째 열을 차지 */
+}
+
+#coursedetail-hr, #review-section { /* 구분선과 후기 섹션 */
+    grid-column: 1 / -1; /* 1번 열부터 마지막(-1) 열까지 전체를 차지 */
+}
+
+
+
+
+
+
+
+/* 후기(댓글) 영역 */
+.review-item {
+	border-bottom: 1px solid #eee;
+	padding: 15px 0;
+}
+
+.review-item:last-child {
+	border-bottom: none;
+}
+
+.review-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.review-author {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.review-date {
+	font-size: 13px;
+	color: #888;
+}
+
+.review-content {
+	font-size: 15px;
+	color: #444;
+}
+
+
+
+
+
+

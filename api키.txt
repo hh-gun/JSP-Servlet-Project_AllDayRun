@@ -1,0 +1,1 @@
+openweathermap api키: 7de86ecde5931bd86677b812af5d0d4f
